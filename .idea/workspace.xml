@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f15f01ef-7199-4cfc-afed-8e2fd2c9ae46" name="Changes" comment="AppiumTest" />
+    <list default="true" id="f15f01ef-7199-4cfc-afed-8e2fd2c9ae46" name="Changes" comment="AppiumTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/appium01/Odev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +56,8 @@
       <recent name="appium01" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test5_SendKeys (2)">
-    <configuration name="Test1_Connection.testConnection (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Odev.testConnection">
+    <configuration name="Odev.testConnection (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumTest" />
       <extension name="coverage">
         <pattern>
@@ -63,7 +66,79 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test1_Connection" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Odev" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Odev.testConnection (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appium01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="appium01" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Odev" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Odev.testConnection (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appium01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="appium01" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Odev" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Odev.testConnection (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appium01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="appium01" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Odev" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Odev.testConnection" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appium01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="appium01" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Odev" />
       <option name="METHOD_NAME" value="testConnection" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -84,75 +159,6 @@
       <option name="MAIN_CLASS_NAME" value="appium01.Test1_Connection" />
       <option name="METHOD_NAME" value="testConnection" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1_Connection.testConnection" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test1_Connection" />
-      <option name="METHOD_NAME" value="testConnection" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test5_SendKeys (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test5_SendKeys" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test5_SendKeys (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test5_SendKeys" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test5_SendKeys" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test5_SendKeys" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -161,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Test5_SendKeys (2)" />
-        <item itemvalue="TestNG.Test5_SendKeys (1)" />
-        <item itemvalue="TestNG.Test1_Connection.testConnection" />
-        <item itemvalue="TestNG.Test5_SendKeys" />
-        <item itemvalue="TestNG.Test1_Connection.testConnection (1)" />
+        <item itemvalue="TestNG.Odev.testConnection" />
+        <item itemvalue="TestNG.Odev.testConnection (4)" />
+        <item itemvalue="TestNG.Odev.testConnection (3)" />
+        <item itemvalue="TestNG.Odev.testConnection (2)" />
+        <item itemvalue="TestNG.Odev.testConnection (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699884525054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AppiumTest">
+      <created>1699884589972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699884589972</updated>
+    </task>
+    <task id="LOCAL-00003" summary="AppiumTest">
+      <created>1699884770112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699884770112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
