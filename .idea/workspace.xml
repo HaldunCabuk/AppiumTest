@@ -53,7 +53,7 @@
       <recent name="appium01" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test5_SendKeys">
+  <component name="RunManager" selected="TestNG.Test5_SendKeys (2)">
     <configuration name="Test1_Connection.testConnection (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumTest" />
       <extension name="coverage">
@@ -108,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2_AppiumServer" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test5_SendKeys (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumTest" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +117,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="appium01" />
-      <option name="MAIN_CLASS_NAME" value="appium01.Test2_AppiumServer" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Test5_SendKeys" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test5_SendKeys (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appium01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="appium01" />
+      <option name="MAIN_CLASS_NAME" value="appium01.Test5_SendKeys" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -144,10 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Test5_SendKeys" />
+        <item itemvalue="TestNG.Test5_SendKeys (2)" />
+        <item itemvalue="TestNG.Test5_SendKeys (1)" />
         <item itemvalue="TestNG.Test1_Connection.testConnection" />
+        <item itemvalue="TestNG.Test5_SendKeys" />
         <item itemvalue="TestNG.Test1_Connection.testConnection (1)" />
-        <item itemvalue="TestNG.Test2_AppiumServer" />
       </list>
     </recent_temporary>
   </component>
