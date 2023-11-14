@@ -51,7 +51,7 @@ public class Odev {
 
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
         //driver.closeApp();
         //driver.quit();
         //service.stop();
@@ -80,50 +80,52 @@ public class Odev {
         selectPlanet("earth");
 
 
-
-
     }
-    public By getXpathWithText(String text){
+
+    public By getXpathWithText(String text) {
         return By.xpath("//*[@text='" + text + "']");
     }
 
-    public By getXpathWithAttr(String text){
+    public By getXpathWithAttr(String text) {
         By locator = By.xpath("//*[@*[contains(., '" + text + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return locator;
     }
-    public By getXpathWithAttr2(String text){
+
+    public By getXpathWithAttr2(String text) {
         By locator = By.xpath("//*[@*[contains(., '" + text + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return locator;
     }
-public void selectPlanet(String text){
 
-    List<MobileElement> elements =  driver.findElements(getXpathWithAttr("text1"));
+    public void selectPlanet(String text) {
 
-    for (MobileElement element : elements) {
-        if (element.getText().toLowerCase().equals(text)){
-            element.click();
+        List<MobileElement> elements = driver.findElements(getXpathWithAttr("text1"));
+
+        for (MobileElement element : elements) {
+            if (element.getText().toLowerCase().equals(text)) {
+                element.click();
+                break;
+            }
         }
     }
-}
 
 
-    public void click(String text){
+    public void click(String text) {
         By locator = getXpathWithText(text);
         click(locator);
     }
 
 
-    public void click(By locator){
+    public void click(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
-    public void sendKeys(By locator, String text){
+    public void sendKeys(By locator, String text) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).sendKeys(text);
     }
 
-    public DesiredCapabilities getCapabilities(){
+    public DesiredCapabilities getCapabilities() {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("appium:udid", "emulator-5554");
@@ -135,7 +137,8 @@ public void selectPlanet(String text){
         caps.setCapability("appium:appActivity", "com.touchboarder.androidapidemos.MainActivity");
         return caps;
     }
-    public void startAppium(){
+
+    public void startAppium() {
 
         service = new AppiumServiceBuilder()
                 .withIPAddress("127.0.0.1") // Appium 127.0.0.1 adresinden run edilecek
@@ -147,8 +150,6 @@ public void selectPlanet(String text){
 
         service.start();
     }
-
-
 
 
     public void sleep(long millis) {
