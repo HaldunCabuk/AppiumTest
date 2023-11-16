@@ -1,16 +1,16 @@
 package utils;
 
 public enum Device {
+
     SAMSUNG_A33("emulator-5554",
             "12",
             "Galaxy A33",
             "Android"),
-    PIXEL_XL("",
+    EMULATOR1("",
             "",
             "",
             "")
     ;
-
 
 
     private String udid;
