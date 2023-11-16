@@ -17,6 +17,7 @@ public class MyStepdefs extends BaseSteps {
         click("CONTINUE");
         click("OK");
         click("OK");
+
     }
 
     @When("user clicks {string}")
