@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f15f01ef-7199-4cfc-afed-8e2fd2c9ae46" name="Changes" comment="AppiumTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/xml/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/appium02/Test2_Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/base/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/base/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Apidemos2.features" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Appidemos2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Appidemos1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Appidemos1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/runner/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
       <recent name="appium01" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Runner">
+  <component name="RunManager" selected="TestNG.Test1.test2">
     <configuration name="Scenario: Popup menu assertion (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Appidemos2.feature" />
@@ -142,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.test5_Task" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumTest" />
       <extension name="coverage">
         <pattern>
@@ -152,7 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="appium02" />
       <option name="MAIN_CLASS_NAME" value="appium02.Test1" />
-      <option name="METHOD_NAME" value="test5_Task" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -162,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Test1.test2" />
         <item itemvalue="TestNG.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Popup menu assertion (2)" />
         <item itemvalue="Cucumber Java.Scenario: Popup menu assertion (1)" />
         <item itemvalue="Cucumber Java.Scenario: Popup menu assertion" />
-        <item itemvalue="TestNG.Test1.test5_Task" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699996868808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="AppiumTest">
+      <created>1700137634620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700137634620</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.*;
 
 @CucumberOptions(
-        features = {"src/test/java/appium3Cucumber/features/Apidemos2.feature"},
+        features = {"src/test/java/appium3Cucumber/features/Appidemos2.feature"},
         glue = {"appium3Cucumber/stepdefs"}
 )
 public class Runner extends AbstractTestNGCucumberTests {
