@@ -23,19 +23,40 @@ public abstract class BaseSteps {
 
     By lNames = By.className("android.widget.TextView");
     By lPhotos = By.className("android.widget.ImageView");
-    By lAllScreen = By.className("android.widget.LinearLayout");
-
+    By lIcons = By.className("android.widget.ImageView");
+    String dialogButton = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android." +
+            "widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.ListView/android.widget.TextView[4]";
+String icon1 = "android:id/left_icon";
+String icon2 = "android:id/right_icon";
     public BaseSteps() {
         driver = MyDriver.getDriver();
         wait = new WebDriverWait(driver, 20);
     }
 
-    public void allScreenInfo(){
-        List<MobileElement> scrInfo  = driver.findElements(lAllScreen);
-        for (MobileElement mobileElement : scrInfo) {
-            System.out.println(mobileElement.getText());
+
+    public void getVoiceIconNums(int num){
+
+        List<MobileElement> icons = driver.findElements(lIcons);
+        int counter=0;
+
+        for (int i = 0; i <icons.size() ; i++) {
+            MobileElement elm = icons.get(i);
+
+            System.out.println(elm.getId());
         }
+
+
+        for (MobileElement icon : icons) {
+            if (icon1.length()>0){
+                System.out.println("Pas gectim");
+            }else {
+                counter++;
+            }
+        }
+        Assert.assertEquals(num,counter);
     }
+
+
     public void checkPhotoNums(int num) {
         List<MobileElement> photos = driver.findElements(lPhotos);
         int counter = 0;
@@ -46,6 +67,19 @@ public abstract class BaseSteps {
         Assert.assertEquals(num, counter);
 
     }
+
+    public void clickByXpath(){
+        click(By.xpath(dialogButton));
+    }
+    public void deneme(){
+        By lResourceId1 = By.id("android:id/right_icon");
+        By lResourceId2 = By.id("android:id/left_icon");
+        MobileElement elm = driver.findElement(lResourceId1);
+        if (elm.isDisplayed()){
+            System.out.println("OK Ok OK");
+        }
+    }
+
 
     public void checkVisibleOfNames(String a, String b, String c, String d, int num) {
 
@@ -118,6 +152,9 @@ public abstract class BaseSteps {
     public By getXpathWithTextAttr(String text) {
         return By.xpath("//*[contains(@text,'" + text + "')] | //*[@*[contains(., '" + text + "')]]");
     }
+   /* public By getXpathWithTextAttr(String text, int index) {
+        return By.xpath("//*[contains(@text,'" + text + "')]['"+index+"'] | //*[@*[contains(., '" + text + "')]]['"+index+"']");
+    }*/
 
     public void waitForVisibilityOf(String text) {
         By locator = getXpathWithTextAttr(text);
@@ -130,6 +167,10 @@ public abstract class BaseSteps {
             if (driver.findElements(locator).size() > 0) return true;
             return false;
         });
+    }
+    public void inVisibleOfElement(){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(dialogButton)));
+
     }
 
     public void swipeV(double start, double end) {

@@ -7,7 +7,7 @@ Feature: Api Demos Scenarios
 #  d.    People Names'e tekrar tiklayin ve 4 adet ismin invisible oldugunu assert edin
 #  e.    Fish Names'e tiklayin ve ikinci siradaki ismin Bubbles oldugunu assert edin.
 
-  Scenario: Scenario1
+  Scenario: Scen1
 
     Given user opens APIDEMO
     And user clicks "API Demos".
@@ -21,19 +21,23 @@ Feature: Api Demos Scenarios
     Then user clicks "Fish Names".
     And user sees "Bubbles" name int the 2. turn
 
-#  Scenario: Scenario2
+#  Scenario2
 
 #  a.  API Demos->App e gidin
 #  b.  Dialog'a tiklayin
 #  c.  Dialogun acildigini ve Acilan dialogda 1 adet ses iconu oldugunu assert edin
-#  d.  for ile 3 loop yapin ve her loop da ADD CONTENT'e tiklayin ve icon yaisinin arttigini assert edin
+#  d.  for ile 3 loop yapin ve her loop da ADD CONTENT'e tiklayin ve icon sayisinin arttigini assert edin
 #  e.  for ile 4 loop yapin ve her loop da REMOVE CONTENT'e tiklayin ve icon yaisinin azaldigini assert edin
 #  f.  back() ile Dialogu kapatin ve kapandigini assert edin.
-  
-#  Scenario: Scenario 2
-#
-#    Given user opens APIDEMO
-#    When user clicks "App".
+
+  Scenario: Scen2
+
+    Given user opens APIDEMO
+    And user clicks "API Demos".
+    When user clicks "App".
+    Then user clicks "Activity".
+    Then user clicks Dialog button.
+    And user sees Dialog Page and 1 voice icon.
 
 
 #  Scenario 3
@@ -46,7 +50,7 @@ Feature: Api Demos Scenarios
 #  e.  NEW PHOTO butonuna yine tiklayin ve resim sayisinin arttigini assert edin
 #  f.  CLEAR PHOTOS buttonuna tiklayin ve resimlerin temizlendigini assert edin
 
-  Scenario: Scenario3
+  Scenario: Scen3
 
     Given user opens APIDEMO
     Then user clicks "API Demos".
