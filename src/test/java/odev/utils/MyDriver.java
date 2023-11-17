@@ -1,4 +1,4 @@
-package appium3Cucumber.odev.utils;
+package odev.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

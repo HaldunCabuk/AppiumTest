@@ -34,4 +34,6 @@ public class MyStepdefs extends BaseSteps {
     public void swipeUntilTheTextIsVisible(String text) {
         swipeUntilVisible(text, true);
     }
+
+
 }

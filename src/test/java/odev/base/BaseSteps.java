@@ -1,6 +1,6 @@
-package appium3Cucumber.odev.base;
+package odev.base;
 
-import appium3Cucumber.odev.utils.MyDriver;
+import odev.utils.MyDriver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 
 import java.time.Duration;
@@ -26,34 +25,60 @@ public abstract class BaseSteps {
     By lIcons = By.className("android.widget.ImageView");
     String dialogButton = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android." +
             "widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.ListView/android.widget.TextView[4]";
-String icon1 = "android:id/left_icon";
-String icon2 = "android:id/right_icon";
+    By lIcon1 = By.id("android:id/left_icon");
+    By lIcon2 = By.id("android:id/right_icon");
+
     public BaseSteps() {
         driver = MyDriver.getDriver();
         wait = new WebDriverWait(driver, 20);
     }
 
 
-    public void getVoiceIconNums(int num){
+    public void getVoiceIconNums(int num) {
 
         List<MobileElement> icons = driver.findElements(lIcons);
-        int counter=0;
-
-        for (int i = 0; i <icons.size() ; i++) {
-            MobileElement elm = icons.get(i);
-
-            System.out.println(elm.getId());
-        }
-
-
+        int counter = 0;
+        int newNum = 0;
         for (MobileElement icon : icons) {
-            if (icon1.length()>0){
-                System.out.println("Pas gectim");
-            }else {
-                counter++;
+            counter++;
+            if (counter > 2 ) {
+                newNum++;
             }
         }
-        Assert.assertEquals(num,counter);
+        Assert.assertEquals(newNum, num);
+
+    }
+    public void ascdVoiceIconNumsWithLoops(int num, String text) {
+        int counter = 0;
+        int newNum = 0;
+
+
+
+        for (int i = 0; i < num ; i++) {
+            click(text);
+        }
+        List<MobileElement> icons = driver.findElements(lIcons);
+
+        for (MobileElement icon : icons) {
+              counter++;
+            if (counter > 2 ) {
+               newNum++;
+            }
+        }
+        Assert.assertEquals(newNum,num);
+    }
+    public void descVoiceIconNumsWithLoops(int num, String text) {
+        int counter = 0;
+
+        for (int i = 0; i < num ; i++) {
+            click(text);
+        }
+        List<MobileElement> icons = driver.findElements(lIcons);
+
+        for (MobileElement icon : icons) {
+            counter++;
+        }
+        Assert.assertEquals(counter,2);
     }
 
 
@@ -68,14 +93,15 @@ String icon2 = "android:id/right_icon";
 
     }
 
-    public void clickByXpath(){
+    public void clickByXpath() {
         click(By.xpath(dialogButton));
     }
-    public void deneme(){
+
+    public void deneme() {
         By lResourceId1 = By.id("android:id/right_icon");
         By lResourceId2 = By.id("android:id/left_icon");
         MobileElement elm = driver.findElement(lResourceId1);
-        if (elm.isDisplayed()){
+        if (elm.isDisplayed()) {
             System.out.println("OK Ok OK");
         }
     }
@@ -150,7 +176,7 @@ String icon2 = "android:id/right_icon";
 
 
     public By getXpathWithTextAttr(String text) {
-        return By.xpath("//*[contains(@text,'" + text + "')] | //*[@*[contains(., '" + text + "')]]");
+        return By.xpath("//*[contains(@text,'" + text + "')] | //*[@*[contains(.,'" + text + "')]]");
     }
    /* public By getXpathWithTextAttr(String text, int index) {
         return By.xpath("//*[contains(@text,'" + text + "')]['"+index+"'] | //*[@*[contains(., '" + text + "')]]['"+index+"']");
@@ -168,7 +194,8 @@ String icon2 = "android:id/right_icon";
             return false;
         });
     }
-    public void inVisibleOfElement(){
+
+    public void inVisibleOfElement() {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(dialogButton)));
 
     }
@@ -228,7 +255,7 @@ String icon2 = "android:id/right_icon";
                     break;
             } catch (Exception e) {
                 if (down)
-                    swipeV(.5, .6);
+                    swipeV(.4, .6);
                 else
                     swipeV(.4, .7);
             }
@@ -255,5 +282,8 @@ String icon2 = "android:id/right_icon";
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void back(){
+        driver.navigate().back();
     }
 }

@@ -37,7 +37,10 @@ Feature: Api Demos Scenarios
     When user clicks "App".
     Then user clicks "Activity".
     Then user clicks Dialog button.
-    And user sees Dialog Page and 1 voice icon.
+    And user sees opened Dialog Page and 1 voice icon.
+    When user 3 times clicks "ADD CONTENT" and sees ascendend voiceIcon
+    And user 4 times clicks "REMOVE CONTENT" and sees descendend voiceIcon
+    And user click back button.
 
 
 #  Scenario 3

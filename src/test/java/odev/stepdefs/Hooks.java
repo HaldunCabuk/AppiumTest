@@ -1,8 +1,6 @@
-package appium3Cucumber.odev.stepdefs;
+package odev.stepdefs;
 
-import appium3Cucumber.odev.utils.MyDriver;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
+import odev.utils.MyDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
