@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f15f01ef-7199-4cfc-afed-8e2fd2c9ae46" name="Changes" comment="AppiumTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/base/BaseSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/runner/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/stepdefs/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/utils/MyDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/stepdefs/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/stepdefs/MyStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium01/Odev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium01/Odev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/base/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/base/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/runner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/stepdefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/stepdefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/utils/MyDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/utils/MyDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Haldun35/IdeaProjects/AppiumTest/target/generated-sources/annotations&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -66,16 +67,76 @@
       <recent name="appium01" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Runner (1)">
-    <configuration name="Scenario: Popup menu assertion" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Scenario2">
+    <configuration name="Scenario: Scenario 1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/features/Appidemos2.feature" />
-      <option name="GLUE" value="appium3Cucumber.stepdefs" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" />
+      <option name="GLUE" value="appium3Cucumber.stepdefs appium3Cucumber.odev.stepdefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AppiumTest" />
-      <option name="NAME_FILTER" value="^Popup menu assertion$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Popup menu assertion$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Popup menu assertion" />
+      <option name="NAME_FILTER" value="^Scenario 1$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario 1$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Scenario 1" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Scenario 2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" />
+      <option name="GLUE" value="appium3Cucumber.stepdefs appium3Cucumber.odev.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AppiumTest" />
+      <option name="NAME_FILTER" value="^Scenario 2$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario 2$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Scenario 2" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Scenario2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" />
+      <option name="GLUE" value="appium3Cucumber.stepdefs appium3Cucumber.odev.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AppiumTest" />
+      <option name="NAME_FILTER" value="^Scenario2$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario2$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Scenario2" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/appium3Cucumber/odev/feature/Odev_Scenarios.feature" />
+      <option name="GLUE" value="appium3Cucumber.stepdefs appium3Cucumber.odev.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AppiumTest" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,65 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium3Cucumber.runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium3Cucumber.runner" />
-      <option name="MAIN_CLASS_NAME" value="appium3Cucumber.runner.Runner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium02" />
-      <option name="MAIN_CLASS_NAME" value="appium02.Test1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1.test2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appium02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="appium02" />
-      <option name="MAIN_CLASS_NAME" value="appium02.Test1" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Scenario2" />
+        <item itemvalue="Cucumber Java.Scenario: Scenario 2" />
+        <item itemvalue="Cucumber Java.Scenario: Scenario 1" />
         <item itemvalue="TestNG.Runner (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Popup menu assertion" />
-        <item itemvalue="TestNG.Runner" />
-        <item itemvalue="TestNG.Test1.test2" />
-        <item itemvalue="TestNG.Test1" />
+        <item itemvalue="Cucumber Java.Scenario: " />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700144026935</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AppiumTest">
+      <created>1700150008832</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700150008832</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

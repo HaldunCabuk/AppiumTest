@@ -81,6 +81,17 @@ public class Odev {
 
 
     }
+    public void selectPlanet(String text) {
+
+        List<MobileElement> elements = driver.findElements(getXpathWithAttr("text1"));
+
+        for (MobileElement element : elements) {
+            if (element.getText().toLowerCase().equals(text)) {
+                element.click();
+                break;
+            }
+        }
+    }
 
     public By getXpathWithText(String text) {
         return By.xpath("//*[@text='" + text + "']");
@@ -98,17 +109,7 @@ public class Odev {
         return locator;
     }
 
-    public void selectPlanet(String text) {
 
-        List<MobileElement> elements = driver.findElements(getXpathWithAttr("text1"));
-
-        for (MobileElement element : elements) {
-            if (element.getText().toLowerCase().equals(text)) {
-                element.click();
-                break;
-            }
-        }
-    }
 
 
     public void click(String text) {

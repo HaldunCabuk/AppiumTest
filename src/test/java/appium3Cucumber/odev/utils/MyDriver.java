@@ -6,8 +6,6 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import utils.App;
-import utils.Device;
 
 public class MyDriver {
     private static AppiumDriver<MobileElement> driver;
@@ -15,8 +13,9 @@ public class MyDriver {
 
     public static AppiumDriver<MobileElement> getDriver()  {
         if (driver == null){
-            driver = new AndroidDriver<>(service.getUrl(), getCapabilities());
             startAppium();
+            driver = new AndroidDriver<>(service.getUrl(), getCapabilities());
+
         }
         return driver;
     }

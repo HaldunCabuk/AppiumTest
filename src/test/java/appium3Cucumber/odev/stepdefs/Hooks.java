@@ -6,18 +6,18 @@ import io.appium.java_client.MobileElement;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
+
 public class Hooks {
 
-    AppiumDriver<MobileElement> driver;
+
     @Before
     public void before(){
-      driver= MyDriver.getDriver();
+        MyDriver.getDriver();
     }
 
     @After
     public void after(){
-        driver.closeApp();
-        driver.quit();
+        MyDriver.quit();
     }
 
 }

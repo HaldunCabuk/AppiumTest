@@ -9,20 +9,94 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.App;
-import utils.Device;
-import utils.Driver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 
 import java.time.Duration;
+import java.util.List;
 
 public abstract class BaseSteps {
 
     protected AppiumDriver<MobileElement> driver;
     protected WebDriverWait wait;
 
-    public BaseSteps(){
+    By lNames = By.className("android.widget.TextView");
+    By lPhotos = By.className("android.widget.ImageView");
+    By lAllScreen = By.className("android.widget.LinearLayout");
+
+    public BaseSteps() {
         driver = MyDriver.getDriver();
         wait = new WebDriverWait(driver, 20);
+    }
+
+    public void allScreenInfo(){
+        List<MobileElement> scrInfo  = driver.findElements(lAllScreen);
+        for (MobileElement mobileElement : scrInfo) {
+            System.out.println(mobileElement.getText());
+        }
+    }
+    public void checkPhotoNums(int num) {
+        List<MobileElement> photos = driver.findElements(lPhotos);
+        int counter = 0;
+
+        for (MobileElement photo : photos) {
+            counter++;
+        }
+        Assert.assertEquals(num, counter);
+
+    }
+
+    public void checkVisibleOfNames(String a, String b, String c, String d, int num) {
+
+        List<MobileElement> elements = driver.findElements(lNames);
+        int counter = 0;
+
+        for (MobileElement element : elements) {
+            if (element.getText().equals(a) | element.getText().equals(b) | element.getText().equals(c) | element.getText().equals(d)) {
+                counter++;
+            }
+        }
+        Assert.assertEquals(counter, num);
+    }
+
+    public void checkInVisibleOfNames(String a, String b, String c, String d) {
+
+        List<MobileElement> elements = driver.findElements(lNames);
+        int counter = 0;
+
+        for (MobileElement element : elements) {
+            if ((element.getText().equals(a) | element.getText().equals(b) | element.getText().equals(c) | element.getText().equals(d))) {
+                counter++;
+            }
+        }
+        Assert.assertEquals(counter, 0);
+
+    }
+
+    public void checkRankingNumber(String a, int num) {
+
+        List<MobileElement> elements = driver.findElements(lNames);
+        String str1 = "Goldy";
+        int counter = 0;
+
+        for (MobileElement element : elements) {
+            if (element.getText().equals(a)) {
+                counter++;
+                break;
+            } else if (element.getText().equals(str1)) {
+                counter++;
+            }
+
+        }
+        Assert.assertEquals(counter, num);
+    }
+
+
+    public By getXpathWithAttr(String text) {
+        By locator = By.xpath("//*[contains(@text,'" + text + "')] | //*[@*[contains(., '" + text + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return locator;
     }
 
     public void click(String text) {
@@ -32,6 +106,7 @@ public abstract class BaseSteps {
 
 
     public void click(By locator) {
+        sleep(700);
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
@@ -52,7 +127,7 @@ public abstract class BaseSteps {
     public void waitForVisibilityOf(By locator) {
         //wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         wait.until(driver -> {
-            if (driver.findElements(locator).size()>0) return true;
+            if (driver.findElements(locator).size() > 0) return true;
             return false;
         });
     }
@@ -92,9 +167,9 @@ public abstract class BaseSteps {
         int endPoint = (int) (width * end);
 
         new TouchAction<>(driver)
-                .press(PointOption.point(startPoint, height/2))
+                .press(PointOption.point(startPoint, height / 2))
                 .waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
-                .moveTo(PointOption.point( endPoint, height/2))
+                .moveTo(PointOption.point(endPoint, height / 2))
                 .release()
                 .perform();
     }
@@ -112,7 +187,7 @@ public abstract class BaseSteps {
                     break;
             } catch (Exception e) {
                 if (down)
-                    swipeV(.7, .4);
+                    swipeV(.5, .6);
                 else
                     swipeV(.4, .7);
             }
